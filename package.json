@@ -4,11 +4,28 @@
   "description": "Nft minting bot",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start:dev": "nodemon"
   },
   "author": "Catamorph",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.1",
     "express": "^4.18.1"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catamorph/nft-mint-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catamorph/nft-mint-bot/issues"
+  },
+  "homepage": "https://github.com/catamorph/nft-mint-bot#readme"
 }
