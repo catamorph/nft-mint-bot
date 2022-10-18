@@ -1,0 +1,1 @@
+export const privateKeyMock = "b1308e9395553bfa328cefb9724b3e502f759b1cad9223feebb20a60890b506e"

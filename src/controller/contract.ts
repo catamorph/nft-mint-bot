@@ -1,13 +1,8 @@
-const ethers = require("ethers");
-import Artifact from "../artifacts/contracts/FactoryNFT.sol/FactoryNFT.json";
-import getProvider from "./provider";
-const getContract = () => {
-  const provider = getProvider();
+import * as ethers from 'ethers';
+import * as Artifact from '../abi/FactoryNFT.json';
+import { CONTRACT_ADDRESS } from '../config/config';
 
-  return new ethers.Contract(
-    process.env.CONTRACT_ADDRESS!,
-    Artifact.abi,
-    provider
-  );
+const getContract = (signerOrProvider: ethers.Signer | ethers.ethers.providers.JsonRpcProvider) => {
+  return new ethers.Contract(CONTRACT_ADDRESS, Artifact.abi, signerOrProvider);
 };
 export default getContract;
