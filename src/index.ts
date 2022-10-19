@@ -17,13 +17,12 @@ const provider = getProvider();
 const contract = getContract(provider);
 
 // Listen for the Initialized event
+console.log('Listening for event...');
 contract.on(
   'Initialized',
   async (
-    preMintStartTime: BigNumber,
     allowlistStartTime: BigNumber,
     publicSaleStartTime: BigNumber,
-    publicSaleEndTime: BigNumber,
     allowlistPrice: BigNumber,
     salePrice: BigNumber,
   ) => {

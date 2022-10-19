@@ -3,7 +3,7 @@ import { CONTRACT_ADDRESS } from '../config/config';
 import getContract from '../controller/contract';
 import getSigner from '../controller/signer';
 import { privateKeyMock } from './mocks/mocks';
-import * as Artifact from '../abi/FactoryNFT.json';
+import * as Artifact from '../abi/FlatLaunchpeg.json';
 import getProvider from '../controller/provider';
 jest.mock('ethers');
 

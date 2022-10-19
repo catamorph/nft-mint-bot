@@ -1,5 +1,5 @@
 import * as ethers from 'ethers';
-import * as Artifact from '../abi/FactoryNFT.json';
+import * as Artifact from '../abi/FlatLaunchpeg.json';
 import { CONTRACT_ADDRESS } from '../config/config';
 
 const getContract = (signerOrProvider: ethers.Signer | ethers.ethers.providers.JsonRpcProvider) => {
